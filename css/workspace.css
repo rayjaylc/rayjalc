@@ -587,7 +587,7 @@ main{
   background-color: hsl(0,0%, 93%);
   border-radius: 10px;
   padding: min(20px,2%);
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   >span{
     font-size: var(--sub-headers);
     font-weight: 600;
