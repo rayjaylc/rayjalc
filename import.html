@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayjay-workspace</title>
+  <link rel="stylesheet" href="./css/workspace.css">
+  <link rel="stylesheet" href="./css/import.css">
+</head>
+<body>
+  <nav id="sidebar">
+    <ul>
+      <li>   
+        <span class="company-name">Rayjay C & L</span>
+        <button class="toggleBtn" onclick="closeSidebar() ">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"/></svg>
+        </button>
+      </li >
+      <li class="active">
+        <a href="./workspace.html">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg" xmlns="http://www.w3.org/2000/svg"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="m21.55 8.17-9-6c-.34-.22-.77-.22-1.11 0l-8.99 6c-.28.19-.45.5-.45.83v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-.33-.17-.65-.45-.83M18 18H6v-2h12z"></path></svg>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="./dashboard.html">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" transform="" id="injected-svg" xmlns="http://www.w3.org/2000/svg"><rect x="13" y="11" width="8" height="10" rx="1" ry="1"></rect><rect x="3" y="15" width="8" height="6" rx="1" ry="1"></rect><rect x="13" y="3" width="8" height="6" rx="1" ry="1"></rect><rect x="3" y="3" width="8" height="10" rx="1" ry="1"></rect></svg>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="./setting.html">
+          <svg width="24" height="24" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg" xmlns="http://www.w3.org/2000/svg"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="m21.16 7.86-1-1.73a1.997 1.997 0 0 0-2.73-.73l-.53.31c-.58-.46-1.22-.83-1.9-1.11V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v.6c-.67.28-1.31.66-1.9 1.11l-.53-.31c-.96-.55-2.18-.22-2.73.73l-1 1.73c-.55.96-.22 2.18.73 2.73l.5.29c-.05.37-.08.74-.08 1.11s.03.74.08 1.11l-.5.29c-.96.55-1.28 1.78-.73 2.73l1 1.73c.55.95 1.78 1.28 2.73.73l.53-.31c.58.46 1.22.83 1.9 1.11v.6c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-.6a8.7 8.7 0 0 0 1.9-1.11l.53.31c.96.55 2.18.22 2.73-.73l1-1.73c.55-.96.22-2.18-.73-2.73l-.5-.29c.05-.37.08-.74.08-1.11s-.03-.74-.08-1.11l.5-.29c.96-.55 1.28-1.78.73-2.73M12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4"></path></svg>
+          <span>Setting</span>
+        </a>
+      </li>
+      <li>
+        <a href="./index.html">
+          <svg width="24" height="24" fill="#ffffff" viewBox="0 0 24 24" transform="" id="injected-svg" xmlns="http://www.w3.org/2000/svg"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M15 11H8v2h7v4l6-5-6-5z"></path><path d="M5 21h7v-2H5V5h7V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2"></path></svg>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="navigation">
+      <div class="navbar">
+        <li>   
+        <span class="company-name">Rayjay C & L</span>
+      </li > 
+        <div class="search">
+          <svg width="20" height="20" fill="hsl(0,0%,50%)" viewBox="0 0 24 24" transform="" id="injected-svg" xmlns="http://www.w3.org/2000/svg"><!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free--><path d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6"></path></svg>
+          <input type="text" placeholder="search...">
+        </div>
+        <div class="left-panel">
+          <div class="light-dark-mode">
+            <span>Light</span>
+            <span>Dark</span>
+            <button class="trottle">Light</button>
+          </div>
+          <div class="notification">
+            <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#00"><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160ZM480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80Z"/></svg>
+            <div class="circle"><strong>&#8226;</strong></div>
+          </div>
+          <div class="user-account">
+            <div class="user-profile">
+              <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#00"><path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+            </div>
+            <button onclick="alert('feature is currently not available at your location')" style="text-decoration: none;color: hsl(0,0%,20%);" class="account_setup.html">
+              <span class="user-name">
+                Hello, Sign in 
+              </span>
+            </button>
+          </div>  
+        </div>
+        <div class="menu-div">
+          <button class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="asidebar">
+      <ul>
+        <li>
+          <span class="company-name">Rayjay L & C</span>
+          <button class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </button>
+        </li>
+        <li>
+          <a href="./workspace.html"><span>Home</span></a>
+        </li>
+        <li>
+          <a href="./dashboard.html.html">
+            <span>Dashboard</span></a>
+        </li>
+        <li>
+          <a href="./setting.html">
+            <span>Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html">
+            <span>Logout</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div class="user-account">
+            <div class="user-profile">
+              <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#00"><path d="M367-527q-47-47-47-113t47-113q47-47 113-47t113 47q47 47 47 113t-47 113q-47 47-113 47t-113-47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+            </div>
+            <button onclick="alert('feature is currently not available at your location')" style="text-decoration: none;color: hsl(0,0%,20%);" class="account_setup.html">
+              <span class="user-name">
+                Hello, Sign in
+              </span>
+            </button>
+          </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper-container">
+      <div class="max-width-wrapper" style="margin-top: -25px;">
+        <div class="current-page">
+          <span>List your product to <span class="js-import">import</span></span>
+        </div>
+        <div class="work-area">
+          <div class="product-details">
+            <div class="product-type">
+              <div >
+                <p>Product name</p>
+                <input type="text" class="product-name js-p-name" required>
+              </div>
+              <div >
+                <p>Description</p>
+                <textarea class="js-p-descrip" id="description" rows="4" required></textarea>
+              </div>
+              <div class="upload-file">
+                <p>Upload an image or a video of your package</p>
+                <div class="image_video_preview">
+                  <div class="preview_zone js-p-img"></div>
+                  
+                  <div class="input-style">
+                    <label for="file-upload">upload</label>
+                    <input type="file" accept="image/*, video/*" id="file-upload">
+                  </div>
+                </div>
+              </div>
+              <div >
+                <p>Product Catergory</p>
+                <input type="text" class="product-category js-p-category" required>
+              </div>
+            </div>
+            <div class="product-package">
+              <div >
+                <p>Packaging material description</p>
+                <textarea type="text" rows='4' class="packaging-material js-p-material" style="margin-bottom: 0;" required></textarea>
+              </div>
+            </div>  
+          </div>
+  
+          <div class="import-info">
+            <div class="pickup-address">
+              <p style="margin-bottom: 20px;">Importer's information</p>
+              <div >
+                <p>First name</p>
+                <input type="text" class="firstname js-i-firstname" required>
+              </div>
+              <div >
+                <p>Last name</p>
+                <input type="text" class="firstname js-i-lastname" required>
+              </div>
+              <div >
+                <p>Phone number</p>
+                <input type="text" class="phone js-i-phone" required>
+              </div>
+              <div >
+                <p>WhatsApp account or any messenger app (eg. iMessage etc)</p>
+                <input type="text" class="social js-i-social" placeholder="optional">
+              </div>
+              <div >
+                <p>Package Pickup address</p>
+                <div class="street-address">
+                  <p>Street address</p>
+                  <input type="text"  id="home address" placeholder="street address" class="js-i-streetAddress" required>
+                  <p>Aprtment number</p>
+                  <input type="text" name="" id="apartment number" class="js-i-apartment"   placeholder="optional">
+                  <p>City, state, Zip code</p>
+                  <input type="text" name="zip-code" class="js-i-zipInfo" id="zip-code" placeholder="eg: New York,NY,1009" required>
+                </div>
+              </div>
+            </div>
+
+            <hr style="background-color: hsl(0,0%,70%); width: 100%;margin-top: 10px;border: none;height: 0.5px;">
+
+            <div style="margin-top: 20px;" class="delivery-address">
+              <div class="delivery-address" style="margin-bottom: 20px;font-weight: 600;">Delivery address</div>
+              <div >
+                <p>First name <span style="font-weight: 500;">( name of the receiver )</span></p>
+                <input type="text" class="firstname js-d-firstname" required>
+              </div>
+              <div >
+                <p>Last name</p>
+                <input type="text" class="lastname js-d-lastname" required>
+              </div>
+              <div >
+                <p>Phone number</p>
+                <input type="text" class="d-phone js-d-phone" required>
+              </div>
+              <div >
+                <p>Email</p>
+                <input type="email" class="phone js-i-email" required>
+              </div>
+              <div >
+                <p>WhatsApp account or any messenger app (eg. iMessage etc)</p>
+                <input type="text" class="d-social js-d-social" placeholder="optional">
+              </div>
+              <div >
+                <p>Package Pickup address</p>
+                <div class="street-address">
+                  <p>Street address</p>
+                  <input type="text" class="js-d-streetAddress"  id="home address" placeholder="street address" required>
+                  <p>Aprtment number</p>
+                  <input style="margin-bottom: 0px;" type="text" name="" class="js-d-apartment number" placeholder="optional">
+                  <p style="margin-top: 20px;">City, state, Zip code</p>
+                  <input type="text" name="zip-code" class="js-d-zipInfo" id="zip-code" placeholder="eg: New York,NY,1009" required>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="submit" style="width: 100%; display: flex;justify-content: center;align-items: center;margin-bottom: 30px;   margin-top: 20px;">
+          <button type="submit" class="submit-btn js-sub-button">Submit</button>
+        </div>
+        <div class="popUp-container" style="z-index: 1000;position: absolute;inset: 0 0 0 0;  width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.4);">
+        <div  style="width:max(380px,50%);min-height:220px;border-radius:20px;background-color: hsl(0,0%,92%);position: fixed;top: 50dvh;left:50%;transform: translateX(-50%) translateY(-50%);padding: 20px 0px;max-height:80dvh;
+        display: grid;
+        grid-template-rows: 1fr 50px;
+        row-gap: 20px;
+        ">
+          <div style="
+          padding: 15px;width: 100%;
+          height: 100%;
+          overflow-y: scroll;
+         "class="js-popUp-msg">
+            
+          </div>
+          <div style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ">
+            <button style="
+              height: 40px;
+              width: 100px;
+              background-color: teal;
+              border-radius: 7px;
+              color: white;
+              cursor: pointer;
+              "   
+              class="js-close-popUp"
+              onclick="closePopUP()"
+              >
+              Go back
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>   
+  </main>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "XhS_yCcLPijJ2I19l"
+        });
+    })();
+  </script>
+  <script src="./script/workspace.js"></script>
+  <script src="./script/import.js"></script>
+</body>
+</html>
