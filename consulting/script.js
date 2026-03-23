@@ -244,6 +244,6 @@ document.querySelectorAll('.progress-bars').forEach(el => {
 });
 
 document.querySelector('.js-btn-submit-prim').addEventListener('click',()=>{
-  window.location.href= "./contact.html"
+  window.location.href= "/rayjay/contact.html"
 })
 
