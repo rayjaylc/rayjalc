@@ -40,5 +40,5 @@ trottleBtn.addEventListener('click',()=>{
 })
 
 requestMeeting.addEventListener('click',()=>{
-  window.location.href = "/rayjallc/consulting/contact.html#meeting"
+  window.location.href = "/rayjalc/consulting/contact.html#meeting"
 })
